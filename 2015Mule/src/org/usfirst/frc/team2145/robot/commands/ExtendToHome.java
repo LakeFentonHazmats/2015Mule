@@ -1,9 +1,6 @@
 package org.usfirst.frc.team2145.robot.commands;
 
 import org.usfirst.frc.team2145.robot.Robot;
-import org.usfirst.frc.team2145.robot.subsystems.Extend;
-
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.command.Command;
 
 

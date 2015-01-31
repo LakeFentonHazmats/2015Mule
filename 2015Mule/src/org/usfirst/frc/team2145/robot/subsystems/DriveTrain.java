@@ -2,11 +2,9 @@ package org.usfirst.frc.team2145.robot.subsystems;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.PowerDistributionPanel;
 import edu.wpi.first.wpilibj.Gyro;
-import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.TalonSRX;
 
 import org.usfirst.frc.team2145.robot.Robot;
-import org.usfirst.frc.team2145.robot.RobotMap;
 import org.usfirst.frc.team2145.robot.commands.DriveWithController;
 
 import edu.wpi.first.wpilibj.Encoder;
@@ -32,7 +30,7 @@ public class DriveTrain extends Subsystem{
 	double hyp;
 	double targetAngle;
 	double SDGyroAngle;
-	boolean limitSwitch2; //switch for 
+
 	
 	
 	

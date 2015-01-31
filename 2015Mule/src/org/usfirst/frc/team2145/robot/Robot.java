@@ -1,4 +1,3 @@
-
 package org.usfirst.frc.team2145.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -21,7 +20,7 @@ public class Robot extends IterativeRobot {
 	public static final DriveTrain driveTrain = new DriveTrain();
 	public static final Lift lift = new Lift();
 	public static OI oi;
-	public static Extend extend = new Extend();
+	public static final Extend extend = new Extend();
 	
 
     Command autonomousCommand;
