@@ -26,18 +26,18 @@ public class Autonomous extends Command {
     // Called repeatedly when this Command is scheduled to run
     @SuppressWarnings("deprecation")
 	protected void execute() {
-    	if (Robot.driveTrain.getswitch() == false) {
-    		Robot.driveTrain.robotDrive(0, 0);
+    	/*if (Robot.driveTrain.getswitch() == false) {
+    		Robot.driveTrain.MecanumDrive(0, 0, 0);
     	}
     	else{
         	if (Robot.driveTrain.encoderOutput() <300) {
-        		Robot.driveTrain.robotDrive(-0.7, -0.07);
+        		Robot.driveTrain.MecanumDrive(0, 0.5, 0);
         	}
         	else { 
         		if (Robot.driveTrain.getRotation() >-90) {
-        			Robot.driveTrain.robotDrive(-0.15, -0.7);
+        			Robot.driveTrain.MecanumDrive(0, 0.5, 0);
         			}
-        		else { Robot.driveTrain.robotDrive(0, 0);
+        		else { Robot.driveTrain.MecanumDrive(0, 0.5, 0);
         			
         			}
         		}
@@ -45,7 +45,8 @@ public class Autonomous extends Command {
         	SmartDashboard.putDouble("Gyro", Robot.driveTrain.getRotation());
 
     	}
-    	    }
+    	*/
+    }
     	
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {

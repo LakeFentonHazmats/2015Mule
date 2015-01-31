@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.command.Command;
 
 public class DriveWithController extends Command{
+
 	public DriveWithController() {
         // Use requires() here to declare subsystem dependencies
         requires(Robot.driveTrain);
@@ -19,14 +20,15 @@ public class DriveWithController extends Command{
     // Called repeatedly when this Command is scheduled to run
     @SuppressWarnings("deprecation")
 	protected void execute() {
-    	
-    	Robot.driveTrain.robotDrive(Robot.oi.stickY(), Robot.oi.stickX());
-    	SmartDashboard.putDouble("Right", Robot.driveTrain.rMotorSpeed());
-    	SmartDashboard.putDouble("Left", Robot.driveTrain.lMotorSpeed());
+    	//Robot.driveTrain.robotDrive(Robot.oi.stickY(), Robot.oi.stickX());
+    	SmartDashboard.putDouble("PDP", Robot.driveTrain.pdpVoltage());
+    	//SmartDashboard.putDouble("Right", Robot.driveTrain.rMotorSpeed());
+    	//SmartDashboard.putDouble("Left", Robot.driveTrain.lMotorSpeed());
     	SmartDashboard.putDouble("X" , Robot.oi.stickX());
     	SmartDashboard.putDouble("Y" , Robot.oi.stickY());
     	SmartDashboard.putDouble("Encoder", Robot.driveTrain.encoderOutput());
     	SmartDashboard.putDouble("Gyro", Robot.driveTrain.getRotation());
+    	
     	
     	
     }
